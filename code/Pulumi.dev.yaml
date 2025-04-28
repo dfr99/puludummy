@@ -1,2 +1,5 @@
 config:
   aws:region: eu-west-1
+  puludummy:puludummy: puludummy
+  puludummy:myPassword:
+    secure: AAABANJUnNebLy24K8oeu8LzVZelOGoA8tT31CaBVP5eHNE+wiXcnc9dtRBI9UDejQ==

@@ -41,3 +41,14 @@ pulumi.export(
 
 with open("./Pulumi.README.md") as f:
     pulumi.export("readme", f.read())
+
+# Import the configuration values
+config = pulumi.Config()
+
+# Retrieve the values of "myEnvironment" and "myPassword"
+environment = config.get("puludummy")
+password = config.get_secret("myPassword")
+
+# Export the values as an output
+pulumi.export("environment", environment)
+pulumi.export("password", password)
