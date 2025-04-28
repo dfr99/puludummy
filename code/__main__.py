@@ -8,3 +8,6 @@ bucket = s3.BucketV2('puludummy')
 
 # Export the name of the bucket
 pulumi.export('bucket_name', bucket.id)
+
+with open("./Pulumi.README.md") as f:
+    pulumi.export("readme", f.read())
